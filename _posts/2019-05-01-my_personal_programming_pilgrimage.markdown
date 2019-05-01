@@ -25,7 +25,7 @@ Put in the context of my work experience, the last few years of my career were s
 
 This was inspiring to me. It caused me to think about construction and design in terms of long-term scalability and sustainability, rather than short-term utility. I had no idea who would be using my work in the future, but I'd need to make sure they understood it. Thus, I learned to build Excel workbooks as if they were self-contained software programs; I had to think not in terms of what makes sense to *me*, but what makes sense to *users in general*. 
 
-Alas, software development seems to be the next logical step in my career progression, which is what has brought me to Flatiron School. Programming is an exciting new challenge built upon my existing experience, it satisfies both my creative compulsion and passion for problem solving, and, if nothing else, it'll allow me to work on cool, practical applications!
+Alas, software development seems to be the next logical step in my career progression, which is what has brought me to Flatiron School. Programming is an exciting new challenge built upon my existing experience, it satisfies both my creative compulsion and passion for problem solving, I'll still get to work on projects in a collaborative environment, and, if nothing else, it'll allow me to work on cool, practical applications!
 
 My biggest question now is, "what do I want to do with this?"
 
