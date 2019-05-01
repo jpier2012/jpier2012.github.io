@@ -7,10 +7,10 @@ permalink:  my_personal_programming_pilgrimage
 
 After graduating with a dual bachelors in Psychology and Sociology in 2012, I found myself thrust into the real world with far more questions than answers.
 
-"What now?"
-"Do I want to further my education?"
-"What do I want out of my career?"
-"What do I want out of life?"
+* "What now?"
+* "Do I want to further my education?"
+* "What do I want out of my career?"
+* "What do I want out of life?"
 
 Without knowing how to satisfy my inquiries, and also needing money to live, I decided it was best to find a job and earn some work experience before planning my next move.
 
