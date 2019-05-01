@@ -18,7 +18,7 @@ Long story short, in the course of ~6 years I went from Customer Care Specialist
 
 Through this career progression, I discovered 2 things firsthand:
 
-1) I love working with technology, and I don't want to stop working with people.
+1) I love working with technology, but I don't want to stop working with people.
 2) I love building technology for other people to use.
 
 Put in the context of my work experience, the last few years of my career were spent building complicated Excel workbooks to process or summarize massive spreadsheets of data. These workbooks were often used by other members of my team, so anytime I designed a workbook for my own purposes, I was ultimately designing it for other people as well.
