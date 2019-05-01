@@ -29,7 +29,7 @@ Alas, software development seems to be the next logical step in my career progre
 
 My biggest question now is, "what do I want to do with this?"
 
-Well, what *don't* I want to do as a programmer in the next 30+ years? Off the very top of my head, here are a few paths that seem worth exploring:
+Well, what *don't* I want to do as a programmer? Will I want to stay a web developer for my entire career, or get closer to the hardware and work on native apps? Off the very top of my head, here are a few paths that seem worth exploring:
 
 - Leverage my existing experience as an analyst to build data analysis software
 - Design CRM software to facilitate sales operations
