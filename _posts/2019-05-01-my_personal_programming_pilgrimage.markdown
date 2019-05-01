@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "My Personal Programming Pilgrimage"
-date:       2019-05-01 14:04:07 +0000
+date:       2019-05-01 10:04:08 -0400
 permalink:  my_personal_programming_pilgrimage
 ---
 
@@ -25,11 +25,11 @@ Put in the context of my work experience, the last few years of my career were s
 
 This was inspiring to me. It caused me to think about construction and design in terms of long-term scalability and sustainability, rather than short-term utility - I had no idea who would be using my work in the future, but I'd need to make sure they understood it. When business rules change, they need to be readily translated into reporting processes. Thus, I learned to build Excel workbooks as if they were self-contained software programs; I had to think not in terms of what makes sense to *me*, but what makes sense to *users in general*, and how I can *change* the function of the workbook to match the demands of the business. 
 
-Alas, software development seems to be the next logical step in my career progression. Programming is an exciting new challenge built upon my existing experience, it satisfies both my creative compulsion and passion for problem solving, and, if nothing else, it'll allow me to work on cool, practical applications!
+Alas, software development seems to be the next logical step in my career progression, which is what has brought me to Flatiron School. Programming is an exciting new challenge built upon my existing experience, it satisfies both my creative compulsion and passion for problem solving, and, if nothing else, it'll allow me to work on cool, practical applications!
 
 My biggest question now is, "what do I want to do with this?"
 
-Well, what *don't* I want to do as a programmer? Off the very top of my head, here are a few paths that seem worth exploring:
+Well, what *don't* I want to do as a programmer in the next 30+ years? Off the very top of my head, here are a few paths that seem worth exploring:
 
 - Leverage my existing experience as an analyst to build data analysis software
 - Design CRM software to facilitate sales operations
@@ -37,4 +37,4 @@ Well, what *don't* I want to do as a programmer? Off the very top of my head, he
 - Teach programming, maybe even in developing countries
 - Become a consultant and do all of the above!
 
-As to where I end up, only time will tell. I just know that it's going to be an exciting journey!
+As to where I end up, only time will tell. I just know that it's going to be an exciting journey and I can't wait to see what's next!
