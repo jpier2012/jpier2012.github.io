@@ -23,18 +23,18 @@ Through this career progression, I discovered 2 things firsthand:
 
 Put in the context of my work experience, the last few years of my career were spent building complicated Excel workbooks to process or summarize massive spreadsheets of data. These workbooks were often used by other members of my team, so anytime I designed a workbook for my own purposes, I was ultimately designing it for other people as well.
 
-This was inspiring to me. It caused me to think about construction and design in terms of long-term scalability and sustainability, rather than short-term utility - I had no idea who would be using my work in the future, but I'd need to make sure they understood it. Similarly, when business rules change, they need to be readily translated into reporting processes without needing to redesign the entire reporting structure. Thus, I learned to build Excel workbooks as if they were self-contained software programs; I had to think not in terms of what makes sense to *me*, but what makes sense to *users in general*, and how to easily *change* the function of the workbook to match the fluctuating demands of the business. 
+This was inspiring to me. It caused me to think about construction and design in terms of long-term scalability and sustainability, rather than short-term utility. I had no idea who would be using my work in the future, but I'd need to make sure they understood it. Thus, I learned to build Excel workbooks as if they were self-contained software programs; I had to think not in terms of what makes sense to *me*, but what makes sense to *users in general*. 
 
 Alas, software development seems to be the next logical step in my career progression, which is what has brought me to Flatiron School. Programming is an exciting new challenge built upon my existing experience, it satisfies both my creative compulsion and passion for problem solving, and, if nothing else, it'll allow me to work on cool, practical applications!
 
 My biggest question now is, "what do I want to do with this?"
 
-Well, what *don't* I want to do as a programmer? Will I want to stay a web developer for my entire career, or get closer to the hardware and work on native apps? Off the very top of my head, here are a few paths that seem worth exploring:
+Well, what *don't* I want to do as a programmer? Will I want to stay a web developer for my entire career, or get closer to the hardware and work on native apps? Who knows! Off the very top of my head, here are a few paths that seem rewarding:
 
 - Leverage my existing experience as an analyst to build data analysis software
 - Design CRM software to facilitate sales operations
-- Build apps for healthcare or social work
-- Teach programming, maybe even in developing countries
+- Build apps for wellness, healthcare, mindfulness, etc
+- Teach programming (internationally?)
 - Become a consultant and do all of the above!
 
 As to where I end up, only time will tell. I just know that it's going to be an exciting journey and I can't wait to see what's next!
