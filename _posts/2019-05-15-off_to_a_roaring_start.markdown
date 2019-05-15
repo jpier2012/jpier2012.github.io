@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Off to a Roaring Start"
-date:       2019-05-15 19:24:29 +0000
+date:       2019-05-15 15:24:30 -0400
 permalink:  off_to_a_roaring_start
 ---
 
@@ -12,7 +12,9 @@ I just finished my Beautiful Billboard CLI project, and, I must say, it was a gr
 
 2) Code comments make the world go round. They only take a moment to write and can save you tons of time when reviewing code in the future, even if it's just you looking at it the next day. Prior to joining this bootcamp I had written some VBA for my job, but had never left comments because I was the only one looking at it. Oh, how much time (and confusion) I could have saved by keeping notes on my work!
 
-3) Ambiguity can lead to over thinking(!). Sometimes we need to make decisions without having all the information we need, and we shouldn't spend too much time trying to find answers to low-priority questions (e.g. 'what color scheme is most appropriate?'). This project specifically was fun because it was my first chance to "show off all the new tools in my belt" so to speak, with clear requirements on what the program needs to do, but without specific instructions on how to do it.
+3) Similarly, making meaningful and well-labled git commits is very important for keeping your work organized on a large scale. With the next project I will need to be more clear and consistent as to what changes I commit and how they're labeled.
+
+4) Ambiguity can lead to over thinking(!). Sometimes we need to make decisions without having all the information we need, and we shouldn't spend too much time trying to find answers to low-priority questions (e.g. 'what color scheme is most appropriate?'). This project specifically was fun because it was my first chance to "show off all the new tools in my belt" so to speak, with clear requirements on what the program needs to do, but without specific instructions on how to do it.
 
 So, since I'll be showing this program to potential employers, I wanted to have some fun with it and make it challenging, which is part of the learning process in and of itself. This meant asking myself questions while fleshing out the app design:
 
