@@ -18,13 +18,13 @@ I just finished my Beautiful Billboard CLI project, and, I must say, it was a gr
 
 So, since I'll be showing this program to potential employers, I wanted to have some fun with it and make it challenging, which is part of the learning process in and of itself. This meant asking myself questions while fleshing out the app design:
 
-	- Should I create Album objects from the Album 200 to relate to the Artist 100?
-	- Should I show the user a list of Hits? 
-	- Do the Hits even need to be their own objects, or just strings to collect and print?
-	- Should I include links scraped from a Google search of the artist?
-	- Which data would look best in a table?
-	- How practical does this project app really need to be?
-	- How many bells and whistles do I want to cram into this before I call it 'done'?
+* - Should I create Album objects from the Album 200 to relate to the Artist 100?
+* - Should I show the user a list of Hits? 
+* - Do the Hits even need to be their own objects, or just strings to collect and print?
+* - Should I include links scraped from a Google search of the artist?
+* - Which data would look best in a table?
+* - How practical does this project app really need to be?
+* - How many bells and whistles do I want to cram into this before I call it 'done'?
 
 Although it could have been fun to spend more time building the app, I decided it was time to submit the project and move on before I make it more complicated, solely to prove that I can. This first CLI is meant to be a benchmark of progress more than anything, which it surely is, and I must say I'm proud of the work I have done.
 
