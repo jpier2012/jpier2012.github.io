@@ -6,9 +6,15 @@ permalink:  off_to_a_roaring_start
 ---
 
 
-I just finished my Beautiful Billboard CLI project, and, I must say, it was a great experience! I learned a ton and this was a great inspiration to get creative with code. Below are some bits of wisdom that I discovered through working on this project... and by "discovered", I mean I had read about these aspects of development prior to starting the project, but hadn't witnessed them firsthand until now.
+I just finished my Beautiful Billboard CLI project, and, I must say, it was a great experience! 
 
-1) It's more important to write code that's readable by humans and easy to maintain, than to find clever ways of writing fewer lines that may obscure the code's intent. Computers are extremely fast nowadays, so performance is not likely to be a concern with most apps. A classic example is FizzBuzz (https://ditam.github.io/posts/fizzbuzz/) - There are countless ways of achieving the same end but, as far as the end user is concerned, they're all going to get the job done equally well. Web app performance seems to only be significantly impacted by large-scale inefficiencies, not small nuances. It's really up to you to determine the most comprehensible solution because you'll be the one(s) maintaining the code.
+If you haven't yet checked it out, you can find the repo here: https://github.com/jpier2012/beautiful_billboard.
+
+It's a basic CLI app that pulls info from the Billboard Artist 100 and Hot 100 charts (https://www.billboard.com/), and looks great while doing it!
+
+Through the project I learned a ton and this was a great inspiration to get creative with code. Below are some bits of wisdom that I discovered through working on this project... and by "discovered", I mean I had read about these aspects of development prior to starting the project, but hadn't witnessed them firsthand until now.
+
+1) It's more important to write code that's readable by humans and easy to maintain, than to find clever ways of writing fewer lines that may obscure the code's intent. During this project it was tempting to try and use the "shortcuts" I've seen throughout this course, but these time and space savers (e.g. ternary operators, using default initialize conditions) can sometimes not look as clean and organized as other alternatives, which make the code harder to work with. Ultimately, computers are extremely fast nowadays, so performance is not likely to be a concern with most apps.  A classic example is FizzBuzz (https://ditam.github.io/posts/fizzbuzz/) - There are countless ways of achieving the same end but, as far as the end user is concerned, they're all going to get the job done equally well. Web app performance seems to only be significantly impacted by large-scale inefficiencies, not small nuances. It's really up to you to determine the most comprehensible solution because you'll be the one(s) maintaining the code.
 
 2) Code comments make the world go round. They only take a moment to write and can save you tons of time when reviewing code in the future, even if it's just you looking at it the next day. Prior to joining this bootcamp I had written some VBA for my job, but had never left comments because I was the only one looking at it. Oh, how much time (and confusion) I could have saved by keeping notes on my work!
 
