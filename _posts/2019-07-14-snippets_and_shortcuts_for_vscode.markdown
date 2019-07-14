@@ -180,6 +180,8 @@ Here are some shortcuts that I personally find extremely useful:
 
 * **Copy/paste to and from terminal:** *ctrl+shift+c* / *ctrl+shift+v*
 
+* **Copy full file path:** *ctrl+alt+c* (while file is highlighted in sidebar)
+
 * **Toggle sidebar:** *ctrl+b*
 
 * **Open sidebar file list:** *ctrl+shift+e*
