@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Snippets and Shortcuts for VSCode"
-date:       2019-07-14 09:17:08 +0000
+date:       2019-07-14 05:17:09 -0400
 permalink:  snippets_and_shortcuts_for_vscode
 ---
 
@@ -11,7 +11,7 @@ Productivity matters.
 
 Ultimately, my impact as a developer comes down to not only my technical skills, but the speed with which I can write code in a production environment. When the deadlines are coming in hot, I need to make sure I can deliver quickly and concisely. 
 
-So, how best to ensure you're able to work as quickly as possible without burning out? Or worse, making stupid mistakes due to rushing to meet a delivery?
+So, how best to ensure you're able to work as quickly as possible without burning out? Or worse, making stupid mistakes while rushing to meet a delivery?
 
 Recruit your IDE to help! 
 
@@ -25,11 +25,15 @@ The differences are subtle, but important.
 
 Snippets are language-specific bits of code that can be tied to key words that, when typed, provide an autocomplete suggestion that can be accessed through up and down arrows and then selected with "tab".
 
-!["By typing "form" I am prompted with two separate snippets](https://imgur.com/t1FImmC)
+![](https://i.imgur.com/t1FImmC.png)
+* *After typing "form" I am prompted to autocomplete using my snippets.*
+
 
 In this case, I've created two separate "form" snippets that each create a basic frame for either form_for or form_tag erb scripts. This generates both the form as a whole and the submit button, then places the cursor at the point where you first declare the path to which the form submits, as well as a declared variable if there is one.
 
-!["Here is the output from the form_for and form_tag snippets respectively"](https://imgur.com/9UDJyhi)
+![](https://i.imgur.com/9UDJyhi.png)
+* *form_for and form_tag snippet outputs respectively*
+
 
 Shortcuts, on the other hand, are reserved for processes that occur within the IDE. An easy example of this is saving the document by using ctrl+s, or hiding the sidebar menu with ctrl+b. 
 
@@ -53,7 +57,7 @@ Once you've got the snippet edit file open - in this case it's ruby.json - you'l
 
 Let's break it down -
 
-![""](https://imgur.com/irvN9Of)
+![""](https://imgur.com/irvN9Of.png)
 
 1) "form_for" is the name of the snippet, which displays next to the prefix shown in the autocomplete prompt.
 
@@ -63,7 +67,7 @@ Let's break it down -
 
 4) the "body" is the output generated when the snippet is called. 
 
-Notice the "$0" global variable - this represents where your active cursor will be in the output. You can also add multiple active cursors to your output using variables $1, $2, etc. 
+Notice the "$0" global variable in the code block above the screenshot - this represents where your active cursor will be in the output. You can add multiple active cursors using variables $1, $2, etc. 
 
 "\n" is an escape character used to generate a new line within the body text to keep the script properly organized.  Without those in there, the ouput would be exactly "<%= form_for $0 do |f| %>  <%= f.submit %><br><% end %>" , which isn't good for anyone.
 
@@ -137,7 +141,7 @@ To access keyboard shortcuts, press ctrl+k+s, so hold control, press k, and then
 
 Once you're prompted with the menu, there should be some fine print providing a link to the keybindings.json file:
 
-![""](https://imgur.com/6u6DQhP)
+![""](https://imgur.com/6u6DQhP.png)
 
 Once you click the link, two separate files will pop up, the list of default keybindings, which cannot be edited, and keybindings.json, the repository for your custom shortcuts.
 
@@ -195,5 +199,7 @@ Here are some shortcuts that I personally find extremely useful:
 * **Move line up or down:** *alt+up/down arrows*
  - when in an editor window, you can hold alt while on the current line and then use up or down to move the entire line before or after the adjacent one.
 * **Scroll editor:** *ctrl+up/down arrows*
+
+NOTE: autocomplete may not prompt depending on the positioning of your cursor within the editor, in which case you can hit *ctrl+space* to manually bring up the menu. I'm not sure why, but some logic within the VSCode editor formatting prevents autocomplete from populating depending on what other code is present in the doc. I find issues specifically when using brackets < and >.
 
 That's all I have for today, I hope you all found this useful - thanks for reading, and happy coding!
