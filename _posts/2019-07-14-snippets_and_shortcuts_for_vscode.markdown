@@ -53,7 +53,7 @@ Once you've got the snippet edit file open - in this case it's ruby.json - you'l
 # 3)	"description": "Create ERB form_for",
 # 4)	"body": [ 
                 "<%= form_for $0 do |f| %>"
-                "<%= f.submit %><br>"
+                "    <%= f.submit %><br>"
 								"<% end %>" 
 								]
 }
@@ -105,7 +105,8 @@ Here are a few more examples to pique your inspiration (though I'm still working
 	 "method": {
 	 	"prefix": "def",
 	 	"body": [
-			 "def $0\nend"
+			 "def $0"
+			 "end"
 	 	],
 	 	"description": "empty method"
 	 }
