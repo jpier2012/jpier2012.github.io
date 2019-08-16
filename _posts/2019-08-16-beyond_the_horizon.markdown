@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Beyond the Horizon"
-date:       2019-08-16 23:51:46 +0000
+date:       2019-08-16 19:51:47 -0400
 permalink:  beyond_the_horizon
 ---
 
