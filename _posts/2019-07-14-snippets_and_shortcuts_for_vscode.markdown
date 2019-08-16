@@ -56,7 +56,7 @@ Once you've got the snippet edit file open - in this case it's ruby.json - you'l
                 "    <%= f.submit %><br>"
 								"<% end %>" 
 								]
-}
+					}
 ```
 
 Let's break it down -
@@ -72,8 +72,6 @@ Let's break it down -
 4) the "body" is the output generated when the snippet is called. 
 
 Notice the "$0" global variable in the code block above the screenshot - this represents where your active cursor will be in the output. You can add multiple active cursors using variables $1, $2, etc. 
-
-"\n" is an escape character used to generate a new line within the body text to keep the script properly organized.  Without those in there, the ouput would be exactly "<%= form_for $0 do |f| %>  <%= f.submit %><br><% end %>" , which isn't good for anyone.
 
 Here are a few more examples to pique your inspiration (though I'm still working on actively using them):
 
