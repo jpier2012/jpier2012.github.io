@@ -53,7 +53,7 @@ Once you've got the snippet edit file open - in this case it's ruby.json - you'l
 # 3)	"description": "Create ERB form_for",
 # 4)	"body": [ 
                 "<%= form_for $0 do |f| %>"
-                "    <%= f.submit %><br>"
+								"<%= f.submit %><br>"
 								"<% end %>" 
 								]
 					}
