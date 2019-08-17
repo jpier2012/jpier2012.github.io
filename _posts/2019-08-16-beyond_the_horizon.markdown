@@ -6,9 +6,9 @@ permalink:  beyond_the_horizon
 ---
 
 
-With only 4 weeks left at Flatiron, I've found myself feeling bittersweet about graduation. It's already been 4 months since my first lecture back in April and I'm now facing the reality that I'll be "officially" looking for a job soon. Although I'll no longer be attending lectures or working through labs, I look forward to continued learning as I build my career.
+With only 4 weeks left at Flatiron, I've found myself feeling bittersweet about graduation. It's already been 4 months since my first lecture back in April and I'm now facing the reality that I'll be "officially" looking for a job soon. 4 projects down, only 1 to go, with React being the final step in the development process.
 
-I'm secure with the idea that it's likely I'll be working with JavaScript, Ruby, Rails, or all of the above for the next several years.
+I'm content with the idea that I'll be working with JavaScript, Ruby, Rails, React, or all of the above for the next several years.
 
 But, the software development industry is ever-changing! Inevitably, the development demands of the modern world will shift as technology continues to advance. So, I'm certainly not worried about my newfound skills becoming obsolete anytime soon, however, I can't help but wonder what the next step will be once I've gotten some experience under my belt.
 
@@ -40,6 +40,6 @@ However, it also has a reputation for building very clean, efficient, reliable s
 
 -
 
-In short, I'm excited to have a career that involves continuous learning. It's only a matter of time before I get comfortable enough with JS and Ruby that I'll feel the desire to explore more languages.
+In short, I'm excited to have a career that involves continuous learning. It's only a matter of time before I get comfortable enough with JS and Ruby that I'll feel the desire to explore more languages. I feel that it's important to strike a balance between specialization and generalization, and it never hurts to know what you're missing by exploring a language you wouldn't otherwise use in your day-to-day.
 
 
