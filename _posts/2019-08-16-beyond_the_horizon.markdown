@@ -6,7 +6,7 @@ permalink:  beyond_the_horizon
 ---
 
 
-With only 4 weeks left at Flatiron, I've found myself feeling bittersweet about graduation. It's already been 4 months since my first lecture back in April and I'm now facing the reality that I'll be "officially" looking for a job soon. 4 projects down, only 1 to go, with React being the final step in the development process.
+With only a handful of weeks left at Flatiron, I've found myself feeling bittersweet about graduation. It's already been 4 months since my first lecture back in April and I'm now facing the reality that I'll be "officially" looking for a job soon. 4 projects down, only 1 to go, with React being the final step in the development process.
 
 I'm content with the idea that I'll be working with JavaScript, Ruby, Rails, React, or all of the above for the next several years.
 
