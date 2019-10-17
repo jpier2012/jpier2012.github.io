@@ -23,7 +23,7 @@ I've hosted 3 separate apps on Heroku, each built in different ways. We'll start
 
 * MisterFitness: [Sinatra and Rake front and back](https://mister-fitness.herokuapp.com/), stored in one repo. 
 
-### How Hosting Works
+## How Hosting Works
 
 In case you are not familiar - hosting platforms provide a runtime environment, a "container" or "dyno" that houses your code and allows other people to visit a website URL to use your app (in the case of Heroku, unless you pay for a specific domain, your app URLs will all be <app-name>.herokuapp.com). The URL is just a means to connect the user to the localhost server running within the dyno.
 
@@ -31,17 +31,17 @@ With Heroku, you can configure this environment using the [Heroku CLI](https://d
 
 > NOTE: all Heroku apps require a root route to host properly. You'll have to define root in config/routes.rb. Heroku also runs on the Postgresql database exclusively, so all apps will have to connect to PG in the production environment at least. 
 
-### MisterFitness
+## MisterFitness
 
 ...Ok, so this one's actually a freebie. I just used [this article](https://medium.com/@christine_tran/deploying-sinatra-app-to-heroku-8c64f025db77) and it was a fairly straightforward process. The other two apps, however, were not as clear cut. 
 
-### JimJobs
+## JimJobs
 
 This process wasn't too involved, I just couldn't find a comprehensive tutorial, so I had to piece together a few and splice in some guesswork of my own. 
 
 I started with the Heroku docs for [deploying a Rails app](https://devcenter.heroku.com/articles/getting-started-with-rails5) and [deploying a Node.js app](https://devcenter.heroku.com/articles/deploying-nodejs). The first, and easiest step, is to create Procfiles for both apps. 
 
-#### Rails API
+### Rails API
 
 My Rails Procfile is pulled [straight from the documentation](https://devcenter.heroku.com/articles/deploying-rails-applications-with-the-puma-web-server), which advises to instruct the Puma web server initialization based on a configuration file, puma.rb:
 
@@ -70,7 +70,7 @@ Lastly, if your app isn't already using Postgresql for the database, you'll have
 
 ...and that's all for Rails!
 
-#### React Client
+### React Client
 
 This one is even easier - per the docs:
 
@@ -80,7 +80,7 @@ Nice.
 
 ...and that's all for Node! With the API hosted, your front end fetch requests will still connect to localhost:3001 from your hosted client (or whatever port you set). 
 
-### FoodView
+## FoodView
 
 Ugh. Here we are, the final frontier. This process was NOT fun, but not because the hosting process is that complicated in and of itself (it's the same as the Rails process above, minus the CORS adjustment), but because I found out the hard way that Heroku [does not include persistent storage](https://devcenter.heroku.com/articles/active-storage-on-heroku) for data other than standard types. SO, the photos upon which my app depends entirely to demonstrate value will not stick around for more than a couple hours on the live site.
 
