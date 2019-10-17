@@ -78,19 +78,19 @@ This one is even easier - per the docs:
 
 Nice.
 
-...and that's all for Node! With the API hosted, your front end fetch requests will still connect to localhost:3001 from your hosted client (or whatever port you set). 
+...and that's all for Node! 
 
 ## FoodView
 
-Ugh. Here we are, the final frontier. This process was NOT fun, but not because the hosting process is that complicated in and of itself (it's the same as the Rails process above, minus the CORS adjustment), but because I found out the hard way that Heroku [does not include persistent storage](https://devcenter.heroku.com/articles/active-storage-on-heroku) for data other than standard types. SO, the photos upon which my app depends entirely to demonstrate value will not stick around for more than a couple hours on the live site.
+Here we are, the final frontier. Real talk: this process wasn', but not because the hosting process is that complicated in and of itself (it's the same as the Rails process above, minus the CORS adjustment), but because I found out the hard way that Heroku [does not include persistent storage](https://devcenter.heroku.com/articles/active-storage-on-heroku) for data other than standard types. SO, the photos upon which my app depends entirely to demonstrate value will not stick around for more than a couple hours on the live site.
 
 No bueno!
 
 I discovered *why* this is only *after* assaulting Google with an irritated smattering of search terms. First I found [this Stack Overflow question](https://stackoverflow.com/questions/18324063/rails-4-images-not-loading-on-heroku) addressing the issue, but the solution was from 6 years ago, didn't work for reasons I didn't understand (likely due to difference in Rails versions), and so figured I should keep searching.
 
-More articles came and went across the screen. "No, no, this isn't what I need!" So I hit the Heroku docs.
+More articles came and went across the screen with no convincing explanation for my issue. So I hit the Heroku docs.
 
-The first Heroku doc I found was [specific to Rails](https://devcenter.heroku.com/articles/direct-to-s3-image-uploads-in-rails) and seemed like it might work, but also said it was last updated this year, offering a warning that "This article has not been updated to reflect the latest changes in libraries and may no longer work." Well, I couldn't think of a more appropriate place to start, so I just dove right in...
+The first one I found was [specific to Rails](https://devcenter.heroku.com/articles/direct-to-s3-image-uploads-in-rails) and seemed like it might work, but also said it was last updated this year, offering a warning that "This article has not been updated to reflect the latest changes in libraries and may no longer work." Well, I couldn't think of a more appropriate place to start, so I just dove right in...
 
 ...to an obnoxious amount of code that, again, didn't work for reasons I didn't understand, and, given the warning I received, figured I should probably keep moving (since every moment you spend on one "solution" has an opportunity cost preventing you from working on another).
 
