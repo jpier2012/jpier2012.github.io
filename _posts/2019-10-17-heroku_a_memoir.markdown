@@ -7,7 +7,7 @@ permalink:  heroku_a_memoir
 
 ![](https://content-static.upwork.com/blog/uploads/sites/3/2015/07/21081451/Heroku-2.png)
 
-Happy Tuesday from sweet home, Chicago (suburbs)!
+Happy Thursday from sweet home, Chicago (suburbs)!
 
 Here we have a momentous occasion - my first blog post as a Flatiron graduate. I've been so busy getting ready to get hired that I'd forgotten to write about all the cool stuff I've been doing! 
 
