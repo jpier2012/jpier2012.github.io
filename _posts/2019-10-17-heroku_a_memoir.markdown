@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Heroku: A Memoir"
-date:       2019-10-17 19:29:44 +0000
+date:       2019-10-17 15:29:44 -0400
 permalink:  heroku_a_memoir
 ---
 
