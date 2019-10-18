@@ -82,7 +82,7 @@ Nice.
 
 ## FoodView
 
-Here we are, the final frontier. Real talk: this process wasn', but not because the hosting process is that complicated in and of itself (it's the same as the Rails process above, minus the CORS adjustment), but because I found out the hard way that Heroku [does not include persistent storage](https://devcenter.heroku.com/articles/active-storage-on-heroku) for data other than standard types. SO, the photos upon which my app depends entirely to demonstrate value will not stick around for more than a couple hours on the live site.
+Here we are, the final frontier. Real talk: this process wasn't fun, but not because the hosting process is that complicated in and of itself (it's the same as the Rails process above, minus the CORS adjustment), but because I found out the hard way that Heroku [does not include persistent storage](https://devcenter.heroku.com/articles/active-storage-on-heroku) for data other than standard types. SO, the photos upon which my app depends entirely to demonstrate value will not stick around for more than a couple hours on the live site.
 
 No bueno!
 
