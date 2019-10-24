@@ -1,6 +1,6 @@
 # Site settings
 author: James Pier
-title: 
+title: jimDev
 header-img: img/home-bg.png
 email: jpier2012@gmail.com
 copyright_name: James Pier
@@ -16,5 +16,3 @@ highlighter: rouge
 permalink: pretty
 paginate: 5
 exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
-
-gems: [jekyll-paginate, jekyll-feed]

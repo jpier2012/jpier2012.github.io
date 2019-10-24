@@ -1,0 +1,25 @@
+I"�<p>Welp, that’s it. I’ve done it. I just submitted my final project and walkthrough video. Once I pass my final assessment, I’ll officially be looking for a job as a Flatiron grad.</p>
+
+<p>Real talk: At this point in my career, working with React is not my favorite. The philosophies behind React’s construction make 100% sense to me but it still feels clunky and counterintuitive to work with. However, as I continue to work with it, I’m sure it’ll feel more “natural” as time goes on.</p>
+
+<p>Regardless, in order to keep my skills sharp (especially React), I’m going to need to not only stay busy, but stay challenged. In order to achieve this, I’m first going to buy a whiteboard, and then use it to maintain inventory of all the things I have to work on.</p>
+
+<p>Right out of the gate, here’s what I have so far, in loose order of priority:</p>
+
+<ol>
+  <li>Add a Bootstrap(-React) front end to JimJobs, my final project</li>
+  <li>Host my apps on Heroku (FoodView2, JimJobs, MisterFitness)</li>
+  <li>Redo FoodView2 and MisterFitness front ends in bootstrap</li>
+  <li>Add more JimJobs features, e.g. ability to delete objects, show contacts that haven’t been contacted in 7 days, etc</li>
+</ol>
+
+<p>While those projects will be fun, and most certainly rewarding, I feel I should also pursue more challenge in the form of open source project contributions and Leetcode/Firecode exercises. I will be setting aside a portion of each day to work on those materials specifically, vs. fun personal projects.</p>
+
+<p>I will also be learning data structures and algorithms via a Udemy class, which should be interesting!</p>
+
+<p>This blog will continue to serve as documentation for my journey.</p>
+
+<p>Farewell, until next time!</p>
+
+<p>James</p>
+:ET

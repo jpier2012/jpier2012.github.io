@@ -1,0 +1,140 @@
+I"h-<p><img src="https://content-static.upwork.com/blog/uploads/sites/3/2015/07/21081451/Heroku-2.png" alt="" /></p>
+
+<p>Happy Thursday from sweet home, Chicago (suburbs)!</p>
+
+<p>Here we have a momentous occasion - my first blog post as a Flatiron graduate. I’ve been so busy getting ready to get hired that I’d forgotten to write about all the cool stuff I’ve been doing!</p>
+
+<p>To kick off the start of a new era, I’m going to detail my experiences hosting each of my apps on Heroku, <a href="https://dashboard.heroku.com/apps">a free app hosting site</a>. Buckle up, this is a fairly lengthy read. Takeaways are listed at the bottom for the TL;DR.</p>
+
+<p>Heroku is quite popular because you can host apps for free, but has extra paid features available if you want to get serious with your hosting in the future. Making your software accessible is necessary step in demonstrating your value to employers, and the process of hosting apps certainly isn’t without its caveats, so it seems appropriate for me to offer some advice to those starting out. Work smarter, not harder, my friends!</p>
+
+<p>I’ve hosted 3 separate apps on Heroku, each built in different ways. We’ll start with the simplest upload first, MisterFitness, and then make our way to the most difficult. (Heroku apps can take a bit to load if you haven’t used them within the past 24h):</p>
+
+<ul>
+  <li>
+    <p>JimJobs: <a href="https://jimjobs-client.herokuapp.com/">React front end</a>, <a href="https://jimjobs-api.herokuapp.com/">Rails back end</a>, stored in two separate repos. You can host the app within one repo, but it’s not necessary and the general consensus is that it’s more complicated.</p>
+  </li>
+  <li>
+    <p>FoodView: <a href="https://viewfood.herokuapp.com/">Rails and JS front end, Rails-only backend</a>, both stored in the same repo.</p>
+  </li>
+  <li>
+    <p>MisterFitness: <a href="https://mister-fitness.herokuapp.com/">Sinatra and Rake front and back</a>, stored in one repo.</p>
+  </li>
+</ul>
+
+<h2 id="how-hosting-works">How Hosting Works</h2>
+
+<p>In case you are not familiar - hosting platforms provide a runtime environment, a “container” or “dyno” that houses your code and allows other people to visit a website URL to use your app (in the case of Heroku, unless you pay for a specific domain, your app URLs will all be <app-name>.herokuapp.com). The URL is just a means to connect the user to the localhost server running within the dyno.</app-name></p>
+
+<p>With Heroku, you can configure this environment using the <a href="https://devcenter.heroku.com/articles/heroku-cli">Heroku CLI</a>, setting variables like secret keys and other credentials for a specific app. Most Heroku apps each also require a Procfile to be created in the root directory, which is a file without an extension that <a href="https://devcenter.heroku.com/articles/procfile">instructs Heroku on how to initialize the app</a> when requests are sent to the server.</p>
+
+<blockquote>
+  <p>NOTE: all Heroku apps require a root route to host properly. You’ll have to define root in config/routes.rb. Heroku also runs on the Postgresql database exclusively, so all apps will have to connect to PG in the production environment at least.</p>
+</blockquote>
+
+<h2 id="misterfitness">MisterFitness</h2>
+
+<p>…Ok, so this one’s actually a freebie. I just used <a href="https://medium.com/@christine_tran/deploying-sinatra-app-to-heroku-8c64f025db77">this article</a> and it was a fairly straightforward process. The other two apps, however, were not as clear cut.</p>
+
+<h2 id="jimjobs">JimJobs</h2>
+
+<p>This process wasn’t too involved, I just couldn’t find a comprehensive tutorial, so I had to piece together a few and splice in some guesswork of my own.</p>
+
+<p>I started with the Heroku docs for <a href="https://devcenter.heroku.com/articles/getting-started-with-rails5">deploying a Rails app</a> and <a href="https://devcenter.heroku.com/articles/deploying-nodejs">deploying a Node.js app</a>. The first, and easiest step, is to create Procfiles for both apps.</p>
+
+<h3 id="rails-api">Rails API</h3>
+
+<p>My Rails Procfile is pulled <a href="https://devcenter.heroku.com/articles/deploying-rails-applications-with-the-puma-web-server">straight from the documentation</a>, which advises to instruct the Puma web server initialization based on a configuration file, puma.rb:</p>
+
+<p><em>~/Procfile</em></p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>web: bundle exec puma -C config/puma.rb
+</code></pre></div></div>
+
+<p>The Puma config, /config/puma.rb, was already set up with the default values advised in the docs, you’ll probably see the same thing in your app if you used a generator for your Rails API.</p>
+
+<p>Next you have to add the front end client URL to your CORS configuration in config/initialize/cors.rb. This allows the API to communicate with the client:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Rails.application.config.middleware.insert_before 0, Rack::Cors do
+  allow do
+    origins ['localhost:3000', 'http://jimjobs-client.herokuapp.com']
+
+    resource '*',
+      headers: :any,
+      methods: [:get, :post, :put, :patch, :delete, :options, :head]
+  end
+end
+</code></pre></div></div>
+
+<p>Lastly, if your app isn’t already using Postgresql for the database, you’ll have to switch it over. Refer to the Heroku Rails docs listed above for a walkthrough.</p>
+
+<p>…and that’s all for Rails!</p>
+
+<h3 id="react-client">React Client</h3>
+
+<p>This one is even easier - per the docs:</p>
+
+<blockquote>
+  <p>If no Procfile exists for a Node.js app, we will attempt to start a default web process via the start script in your package.json.</p>
+</blockquote>
+
+<p>Nice.</p>
+
+<p>…and that’s all for Node!</p>
+
+<h2 id="foodview">FoodView</h2>
+
+<p>Here we are, the final frontier. Real talk: this process wasn’t fun, but not because the hosting process is that complicated in and of itself (it’s the same as the Rails process above, minus the CORS adjustment), but because I found out the hard way that Heroku <a href="https://devcenter.heroku.com/articles/active-storage-on-heroku">does not include persistent storage</a> for data other than standard types. SO, the photos upon which my app depends entirely to demonstrate value will not stick around for more than a couple hours on the live site.</p>
+
+<p>No bueno!</p>
+
+<p>I discovered <em>why</em> this is only <em>after</em> assaulting Google with an irritated smattering of search terms. First I found <a href="https://stackoverflow.com/questions/18324063/rails-4-images-not-loading-on-heroku">this Stack Overflow question</a> addressing the issue, but the solution was from 6 years ago, didn’t work for reasons I didn’t understand (likely due to difference in Rails versions), and so figured I should keep searching.</p>
+
+<p>More articles came and went across the screen with no convincing explanation for my issue. So I hit the Heroku docs.</p>
+
+<p>The first one I found was <a href="https://devcenter.heroku.com/articles/direct-to-s3-image-uploads-in-rails">specific to Rails</a> and seemed like it might work, but also said it was last updated this year, offering a warning that “This article has not been updated to reflect the latest changes in libraries and may no longer work.” Well, I couldn’t think of a more appropriate place to start, so I just dove right in…</p>
+
+<p>…to an obnoxious amount of code that, again, didn’t work for reasons I didn’t understand, and, given the warning I received, figured I should probably keep moving (since every moment you spend on one “solution” has an opportunity cost preventing you from working on another).</p>
+
+<p>“There has to be a better way!”, I mutter to myself, frantically Googling for the perfectly simple solution I’d only seen in my wildest dreams.</p>
+
+<p>…And then, I found <a href="https://devcenter.heroku.com/articles/s3">a different, unrelated article on using Amazon S3</a> to store file uploads, also updated this year…</p>
+
+<p>…which I was able to get working on my local machine, so I could see images being uploaded to my S3 bucket, yet I still couldn’t figure out how to get this to work within the Heroku hosting environment.</p>
+
+<p>“But, all is not lost. I’m getting closer. <em>Closer.</em>” I could feel it.</p>
+
+<p>… and then, as my exhausted fingers mashed out something that apparently resembled words, I’d found it. Bellowing from the depths of the internet, somehow evading my frantic searching prior, I’d found it. The exact article I needed, <a href="https://devcenter.heroku.com/articles/active-storage-on-heroku">using ActiveStorage on Heroku</a>.</p>
+
+<p>This solution works and offers a full explanation as to why photos aren’t showing:</p>
+
+<blockquote>
+  <p>Heroku has an “ephemeral” hard drive, this means that you can write files to disk, but those files will not persist after the application is restarted. By default Active Storage uses a :local storage option, which uses the local file system to store any uploaded files. While file uploads that are stored with the :local option will appear to work at first, the attachments will exhibit seemingly strange behavior and eventually disappear. The files will go away when the app is deployed, or when it is automatically restarted (once every 24 hours).</p>
+</blockquote>
+
+<p>The only prerequisites to this method are to <a href="https://aws.amazon.com/s3/">create an Amazon Simple Storage Service (S3) account</a>, which is completely free, and then <a href="https://elements.heroku.com/addons/bucketeer">enroll in the bucketeer add-on</a>, which is only $5/mo and allows Heroku to communicate with AWS S3 storage buckets. Implementing this was extremely simple, you just have to trust the Bucketeer add-on to do it’s job under the radar.</p>
+
+<p>Finally, I can rest my tired mind. I have reassured my competence as a developer and am wholly satisfied in solving a problem that seemed overwhelming at first, simply because I found far too much information on the problem I was trying to solve.</p>
+
+<h1 id="conclusion-and-takeaways">Conclusion and Takeaways</h1>
+
+<p>All in all, Heroku is a great hosting platform. It’s completely free to use for basic apps, and at most costs $5/month for needing to store file uploads.</p>
+
+<p>However, be wary that things get tricky if you want to upload files to an app, given the ephemeral storage system.</p>
+
+<ul>
+  <li>
+    <p>The documentation for using ActiveStorage on Heroku wasn’t linked to either of the other two documents I found (<a href="https://devcenter.heroku.com/articles/direct-to-s3-image-uploads-in-rails">Direct to S3 Image Uploads in Rails</a>, <a href="https://devcenter.heroku.com/articles/s3">Using AWS S3 to Store Static Assets and File Uploads</a>) nor are the words “ActiveStorage” or “Bucketeer” in either of those articles. This prevented me from seeing the document earlier in my search.</p>
+  </li>
+  <li>
+    <p>Always be as specific as possible when looking up the technologies you’re working with - if I had searched for ActiveStorage specifically, instead of just Rails, I probably would have found the document earlier.</p>
+  </li>
+  <li>
+    <p>Last, but not least - be patient, stay cool, and follow good debugging techniques (using the console logs when you can).  If you’re feeling frustrated, take a break and come back to the problem later with a clear head. You’ll be amazed at what you find!</p>
+  </li>
+</ul>
+
+<p>Thanks for reading!</p>
+
+<p>James</p>
+
+:ET
