@@ -4,7 +4,7 @@
 
 #selfie {
   border-radius: 50%;
-  height: 300px;
+  max-height: 300px;
   width: auto;
   display: block;
   margin-left: auto;
