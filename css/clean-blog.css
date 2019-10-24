@@ -439,16 +439,3 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
-#subheading {
-  font-size: 32px;
-}
-
-#selfie {
-  border-radius: 50%;
-  height: 300px;
-  width: auto;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}

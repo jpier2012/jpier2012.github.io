@@ -7,16 +7,16 @@ subheading: "For questions, comments, concerns, compliments or constructive crit
 <form action="https://formspree.io/jpier2012@gmail.com" method="POST">
   <div class="form-group">
     <label for="email">Name</label>
-    <input type="text" class="form-control" id="name" aria-describedby="nameHelp"
-      placeholder="Enter your name">
+    <input type="text" class="form-control" id="name" name="name" aria-describedby="nameHelp"
+      placeholder="Enter your name" required>
   </div>
   <div class="form-group">
     <label for="_replyto">Email</label>
-    <input type="email" class="form-control" id="email" aria-describedby="emailHelp" name="_replyto" placeholder="email@domain.com">
+    <input type="email" class="form-control" id="email" aria-describedby="emailHelp" name="_replyto" placeholder="email@domain.com" required>
   </div>
   <div class="form-group">
     <label for="exampleFormControlTextarea1">Message</label>
-    <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" name="message" required></textarea>
     <small class="form-text text-muted">Emails will be replied to within 24 hours.</small>
   </div>
   <button type="submit" class="btn btn-primary">Send</button>
